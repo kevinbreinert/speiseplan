@@ -63,14 +63,16 @@ struct ContentView: View {
 							.font(.system(size: 28))
 							.fontWeight(.medium)
 							.foregroundColor(Color(hue: 1.0, saturation: 0.0, brightness: 0.207))
-							.padding(.top, 50) // Verschieben des Textes nach unten
-							.padding(.leading, 15) // Verschieben des Textes nach links
+							.padding(.top, 50) 
+							.padding(.leading, 15)
 						
 						Spacer()
 					}
 				)
 				.padding(.bottom, 0)
 				.foregroundColor(.white)
+			
+			
 			
 			
 			ScrollView(){
@@ -167,7 +169,7 @@ struct ContentView: View {
 										
 										
 									}
-								} //foreach show aktion
+								}
 								
 								
 							}
@@ -177,11 +179,9 @@ struct ContentView: View {
 							.padding(.leading, 5)
 							.padding(.trailing, 5)
 							.padding(.bottom, 10)
-						}//Foreach row.days
+						}
 					}
-					// Vstack under foreach and scrollview
 				}
-				//Foreach first
 				.onAppear(){
 					fetchData()
 					
@@ -190,8 +190,6 @@ struct ContentView: View {
 				
 			}
 			.padding(.bottom, 30)
-			// Scrollview
-			
 		}
 		.ignoresSafeArea(.all)
 		
