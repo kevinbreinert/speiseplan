@@ -61,31 +61,24 @@ struct ContentView: View {
 					HStack{
 						Text("Speiseplan")
 							.font(.system(size: 28))
-						
 							.fontWeight(.medium)
 							.foregroundColor(Color(hue: 1.0, saturation: 0.0, brightness: 0.207))
-						
 							.padding(.top, 50) // Verschieben des Textes nach unten
 							.padding(.leading, 15) // Verschieben des Textes nach links
 						
 						Spacer()
 					}
-					
 				)
 				.padding(.bottom, 0)
 				.foregroundColor(.white)
 			
 			
 			ScrollView(){
-				
 				ForEach(rows.prefix(1), id: \.self) { row in
 					VStack {
 						ForEach(row.Days , id: \.self) { day in
 							VStack{
-								
-								
 								ZStack() {
-									
 									Color.gray.opacity(0)
 										.cornerRadius(10)
 									
@@ -122,7 +115,6 @@ struct ContentView: View {
 									.font(.headline)
 									.foregroundColor(.white)
 								}
-								
 								
 								ForEach(rows, id: \.self) { row in
 									VStack(spacing:0){
